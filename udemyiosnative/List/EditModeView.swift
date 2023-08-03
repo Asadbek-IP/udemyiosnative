@@ -9,7 +9,8 @@ import SwiftUI
 
 struct EditModeView: View {
     @EnvironmentObject var bookData: BookAppData
-    @State private var selectedRows: Set<BookViewModel.ID?> = []
+    @State private var selectedRows: Set<BookViewModel.ID> = []
+    @State private var isActive: Bool = false
     var body: some View {
         VStack {
             
@@ -32,7 +33,9 @@ struct EditModeView: View {
 //            .listStyle(.plain)
             
             HStack{
-                EditButton()
+                Button(isActive ? "Done" : "Edit"){
+                    isActive.toggle()
+                }
                 Spacer()
                 Button(action: {
                     removeSelected()
@@ -42,13 +45,16 @@ struct EditModeView: View {
             }.padding()
             
             List(selection: $selectedRows){
-                ForEach(bookData.bookData){ book in
+                ForEach($bookData.bookData){ $book in
                     
                     CellBook(book: book)
+                        .onTapGesture {
+                            book.selected.toggle()
+                        }
                     
                 }
             }.listStyle(.plain)
-            
+                .environment(\.editMode, .constant(isActive ? EditMode.active : EditMode.inactive))
             
         }
     }
@@ -63,6 +69,7 @@ struct EditModeView: View {
         
         bookData.bookData.remove(atOffsets: indexes)
         selectedRows = []
+        isActive = false
        
     }
 }

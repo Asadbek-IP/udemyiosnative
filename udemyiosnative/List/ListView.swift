@@ -23,6 +23,12 @@ struct CellBook: View {
                 Text(book.year)
                     .font(.caption)
             }
+            Spacer()
+            if(book.selected){
+                Image(systemName: "checkmark")
+                    .foregroundColor(.green)
+            }
+            
         }
     }
 }
