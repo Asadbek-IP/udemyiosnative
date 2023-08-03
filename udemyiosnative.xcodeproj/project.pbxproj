@@ -11,6 +11,12 @@
 		3024FB332A728E25000A1254 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3024FB322A728E25000A1254 /* ContentView.swift */; };
 		3024FB352A728E26000A1254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3024FB342A728E26000A1254 /* Assets.xcassets */; };
 		3024FB382A728E26000A1254 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3024FB372A728E26000A1254 /* Preview Assets.xcassets */; };
+		30B289A32A7A4CB0003955BF /* ForEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B289A22A7A4CB0003955BF /* ForEachView.swift */; };
+		30B289A52A7A4EBA003955BF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B289A42A7A4EBA003955BF /* Book.swift */; };
+		30B289A72A7A6FF8003955BF /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B289A62A7A6FF8003955BF /* GridItemView.swift */; };
+		30B289A92A7A762C003955BF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B289A82A7A762C003955BF /* ListView.swift */; };
+		30F598702A7BBCB600FD0137 /* SectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5986F2A7BBCB600FD0137 /* SectionsView.swift */; };
+		30F598722A7BCB2800FD0137 /* EditModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F598712A7BCB2800FD0137 /* EditModeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		3024FB322A728E25000A1254 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3024FB342A728E26000A1254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3024FB372A728E26000A1254 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30B289A22A7A4CB0003955BF /* ForEachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachView.swift; sourceTree = "<group>"; };
+		30B289A42A7A4EBA003955BF /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		30B289A62A7A6FF8003955BF /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
+		30B289A82A7A762C003955BF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		30F5986F2A7BBCB600FD0137 /* SectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsView.swift; sourceTree = "<group>"; };
+		30F598712A7BCB2800FD0137 /* EditModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditModeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 		3024FB2F2A728E25000A1254 /* udemyiosnative */ = {
 			isa = PBXGroup;
 			children = (
+				30B289A12A7A4C77003955BF /* List */,
 				3024FB302A728E25000A1254 /* udemyiosnativeApp.swift */,
 				3024FB322A728E25000A1254 /* ContentView.swift */,
 				3024FB342A728E26000A1254 /* Assets.xcassets */,
@@ -65,6 +78,19 @@
 				3024FB372A728E26000A1254 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30B289A12A7A4C77003955BF /* List */ = {
+			isa = PBXGroup;
+			children = (
+				30B289A22A7A4CB0003955BF /* ForEachView.swift */,
+				30B289A42A7A4EBA003955BF /* Book.swift */,
+				30B289A62A7A6FF8003955BF /* GridItemView.swift */,
+				30B289A82A7A762C003955BF /* ListView.swift */,
+				30F5986F2A7BBCB600FD0137 /* SectionsView.swift */,
+				30F598712A7BCB2800FD0137 /* EditModeView.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F598702A7BBCB600FD0137 /* SectionsView.swift in Sources */,
 				3024FB332A728E25000A1254 /* ContentView.swift in Sources */,
 				3024FB312A728E25000A1254 /* udemyiosnativeApp.swift in Sources */,
+				30F598722A7BCB2800FD0137 /* EditModeView.swift in Sources */,
+				30B289A92A7A762C003955BF /* ListView.swift in Sources */,
+				30B289A52A7A4EBA003955BF /* Book.swift in Sources */,
+				30B289A32A7A4CB0003955BF /* ForEachView.swift in Sources */,
+				30B289A72A7A6FF8003955BF /* GridItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct udemyiosnativeApp: App {
+    //@StateObject private var appData = AplicationData()
+    @StateObject private var bookData = BookAppData()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EditModeView().environmentObject(bookData)
+                
         }
     }
 }
