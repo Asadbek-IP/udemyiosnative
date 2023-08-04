@@ -47,6 +47,7 @@ struct SectionsView: View {
 }
 
 struct CellBook2: View {
+    @EnvironmentObject var bookData: BookAppData
     let book: BookViewModel
     var body: some View {
         HStack{
@@ -61,7 +62,23 @@ struct CellBook2: View {
                 Text(book.year)
                     .font(.caption)
             }
+            Spacer()
+            Button(action: {
+                removeBook(book: book)
+            }, label: {
+                Image(systemName: "trash")
+                    .foregroundColor(.red)
+            })
         }
+    }
+    
+    func removeBook(book: BookViewModel){
+        var indexes = IndexSet()
+        
+        if let index = bookData.bookData.firstIndex(where: {$0.id == book.id}){
+            indexes.insert(index)
+        }
+        bookData.bookData.remove(atOffsets: indexes)
     }
 }
 

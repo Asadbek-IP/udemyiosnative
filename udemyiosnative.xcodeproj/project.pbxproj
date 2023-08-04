@@ -15,6 +15,10 @@
 		30B289A52A7A4EBA003955BF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B289A42A7A4EBA003955BF /* Book.swift */; };
 		30B289A72A7A6FF8003955BF /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B289A62A7A6FF8003955BF /* GridItemView.swift */; };
 		30B289A92A7A762C003955BF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B289A82A7A762C003955BF /* ListView.swift */; };
+		30F3C9A82A7CC17400320765 /* SwipeActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C9A72A7CC17400320765 /* SwipeActionView.swift */; };
+		30F3C9AA2A7CD3B800320765 /* OutlineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C9A92A7CD3B800320765 /* OutlineListView.swift */; };
+		30F3C9AC2A7CFF7500320765 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C9AB2A7CFF7500320765 /* PickerView.swift */; };
+		30F3C9AE2A7D0C6300320765 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C9AD2A7D0C6300320765 /* DatePickerView.swift */; };
 		30F598702A7BBCB600FD0137 /* SectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5986F2A7BBCB600FD0137 /* SectionsView.swift */; };
 		30F598722A7BCB2800FD0137 /* EditModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F598712A7BCB2800FD0137 /* EditModeView.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +33,10 @@
 		30B289A42A7A4EBA003955BF /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		30B289A62A7A6FF8003955BF /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		30B289A82A7A762C003955BF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		30F3C9A72A7CC17400320765 /* SwipeActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionView.swift; sourceTree = "<group>"; };
+		30F3C9A92A7CD3B800320765 /* OutlineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineListView.swift; sourceTree = "<group>"; };
+		30F3C9AB2A7CFF7500320765 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		30F3C9AD2A7D0C6300320765 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		30F5986F2A7BBCB600FD0137 /* SectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsView.swift; sourceTree = "<group>"; };
 		30F598712A7BCB2800FD0137 /* EditModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditModeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +97,10 @@
 				30B289A82A7A762C003955BF /* ListView.swift */,
 				30F5986F2A7BBCB600FD0137 /* SectionsView.swift */,
 				30F598712A7BCB2800FD0137 /* EditModeView.swift */,
+				30F3C9A72A7CC17400320765 /* SwipeActionView.swift */,
+				30F3C9A92A7CD3B800320765 /* OutlineListView.swift */,
+				30F3C9AB2A7CFF7500320765 /* PickerView.swift */,
+				30F3C9AD2A7D0C6300320765 /* DatePickerView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -165,12 +177,16 @@
 			files = (
 				30F598702A7BBCB600FD0137 /* SectionsView.swift in Sources */,
 				3024FB332A728E25000A1254 /* ContentView.swift in Sources */,
+				30F3C9A82A7CC17400320765 /* SwipeActionView.swift in Sources */,
 				3024FB312A728E25000A1254 /* udemyiosnativeApp.swift in Sources */,
 				30F598722A7BCB2800FD0137 /* EditModeView.swift in Sources */,
+				30F3C9AC2A7CFF7500320765 /* PickerView.swift in Sources */,
+				30F3C9AE2A7D0C6300320765 /* DatePickerView.swift in Sources */,
 				30B289A92A7A762C003955BF /* ListView.swift in Sources */,
 				30B289A52A7A4EBA003955BF /* Book.swift in Sources */,
 				30B289A32A7A4CB0003955BF /* ForEachView.swift in Sources */,
 				30B289A72A7A6FF8003955BF /* GridItemView.swift in Sources */,
+				30F3C9AA2A7CD3B800320765 /* OutlineListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
