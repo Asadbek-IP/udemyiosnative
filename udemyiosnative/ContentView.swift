@@ -269,7 +269,7 @@ struct ContentView: View {
             
             GeometryReader{ geometry in
                 let isPortired = geometry.size.height > geometry.size.width
-                let message = isPortired ? "Portired" : "Landshap"
+              //  let message = isPortired ? "Portired" : "Landshap"
                 
                 VStack{
 //                    Text(message)

@@ -45,7 +45,29 @@ struct BookViewModel: Identifiable, Hashable {
 }
 
 class BookAppData: ObservableObject{
-    @Published var bookData: [BookViewModel]
+    var bookData: [BookViewModel] {
+        didSet{
+            filterValues(search: "")
+        }
+    }
+    
+    @Published var filteredItems: [BookViewModel] = []
+    
+    func filterValues(search: String,scope: Scopes = .title){
+        if search.isEmpty {
+            filteredItems = bookData.sorted(by: { $0.title < $1.title })
+        } else {
+            let list = bookData.filter({ item in
+                
+                var value = scope == .title ? item.title : item.auther
+                return value.localizedCaseInsensitiveContains(search)
+            })
+            
+            filteredItems = list.sorted(by: {$0.title < $1.title})
+        }
+    }
+    
+    
     
     init() {
        bookData = [
@@ -64,5 +86,7 @@ class BookAppData: ObservableObject{
 
 
        ]
+        
+        filterValues(search: "")
     }
 }
