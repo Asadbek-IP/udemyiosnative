@@ -13,7 +13,7 @@ struct udemyiosnativeApp: App {
     @StateObject private var bookData = BookAppData()
     var body: some Scene {
         WindowGroup {
-            NavigationLinkView().environmentObject(bookData)
+            ModalView().environmentObject(bookData)
                 
         }
     }

@@ -9,8 +9,9 @@ import SwiftUI
 
 struct NavigationLinkView: View {
     @EnvironmentObject var bookData: BookAppData
+    @State private var path = NavigationPath()
     var body: some View {
-        NavigationStack{
+        NavigationStack(path: $path){
             List(bookData.bookData){ book in
                 
 //                NavigationLink(destination: BookDetailsScreen(book: book), label: {
@@ -19,11 +20,13 @@ struct NavigationLinkView: View {
                 
                 NavigationLink(value: book, label: {
                     CellBook(book: book)
+                      
                 })
+                
                 
             }
             .navigationDestination(for: BookViewModel.self, destination: { book in
-                BookDetailsScreen(book: book)
+                BookDetailsScreen(path: $path, book: book)
             })
             .toolbar{
                 ToolbarItem(placement: .topBarTrailing){

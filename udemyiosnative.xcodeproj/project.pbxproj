@@ -21,6 +21,9 @@
 		30F3C9AE2A7D0C6300320765 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C9AD2A7D0C6300320765 /* DatePickerView.swift */; };
 		30F598702A7BBCB600FD0137 /* SectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5986F2A7BBCB600FD0137 /* SectionsView.swift */; };
 		30F598722A7BCB2800FD0137 /* EditModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F598712A7BCB2800FD0137 /* EditModeView.swift */; };
+		421C6EE52A975ABE00DF4E87 /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C6EE42A975ABE00DF4E87 /* PictureView.swift */; };
+		421C6EE82A97776800DF4E87 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C6EE72A97776800DF4E87 /* ModalView.swift */; };
+		421C6EEA2A977B3B00DF4E87 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C6EE92A977B3B00DF4E87 /* AddBookView.swift */; };
 		426A8A7A2A8A04F500E59C59 /* MultiNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426A8A792A8A04F500E59C59 /* MultiNavigationView.swift */; };
 		426A8A7C2A8A4A6800E59C59 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426A8A7B2A8A4A6800E59C59 /* SearchView.swift */; };
 		42ABE1082A9371D5001B9585 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABE1072A9371D5001B9585 /* NavigationLinkView.swift */; };
@@ -44,6 +47,9 @@
 		30F3C9AD2A7D0C6300320765 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		30F5986F2A7BBCB600FD0137 /* SectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsView.swift; sourceTree = "<group>"; };
 		30F598712A7BCB2800FD0137 /* EditModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditModeView.swift; sourceTree = "<group>"; };
+		421C6EE42A975ABE00DF4E87 /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
+		421C6EE72A97776800DF4E87 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		421C6EE92A977B3B00DF4E87 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		426A8A792A8A04F500E59C59 /* MultiNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiNavigationView.swift; sourceTree = "<group>"; };
 		426A8A7B2A8A4A6800E59C59 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchView.swift; path = ../../../../../Pictures/SearchView.swift; sourceTree = "<group>"; };
 		42ABE1072A9371D5001B9585 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 		3024FB2F2A728E25000A1254 /* udemyiosnative */ = {
 			isa = PBXGroup;
 			children = (
+				421C6EE62A97774400DF4E87 /* ModalView */,
 				426A8A782A8A04D100E59C59 /* Navigations */,
 				30B289A12A7A4C77003955BF /* List */,
 				3024FB302A728E25000A1254 /* udemyiosnativeApp.swift */,
@@ -116,6 +123,15 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		421C6EE62A97774400DF4E87 /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				421C6EE72A97776800DF4E87 /* ModalView.swift */,
+				421C6EE92A977B3B00DF4E87 /* AddBookView.swift */,
+			);
+			path = ModalView;
+			sourceTree = "<group>";
+		};
 		426A8A782A8A04D100E59C59 /* Navigations */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +140,7 @@
 				42ABE1072A9371D5001B9585 /* NavigationLinkView.swift */,
 				42ABE10A2A937319001B9585 /* SettingsView.swift */,
 				42ABE10C2A937639001B9585 /* BookDetailsScreen.swift */,
+				421C6EE42A975ABE00DF4E87 /* PictureView.swift */,
 			);
 			path = Navigations;
 			sourceTree = "<group>";
@@ -207,7 +224,9 @@
 				30F598722A7BCB2800FD0137 /* EditModeView.swift in Sources */,
 				42ABE1082A9371D5001B9585 /* NavigationLinkView.swift in Sources */,
 				30F3C9AC2A7CFF7500320765 /* PickerView.swift in Sources */,
+				421C6EE52A975ABE00DF4E87 /* PictureView.swift in Sources */,
 				30F3C9AE2A7D0C6300320765 /* DatePickerView.swift in Sources */,
+				421C6EE82A97776800DF4E87 /* ModalView.swift in Sources */,
 				42ABE10B2A937319001B9585 /* SettingsView.swift in Sources */,
 				30B289A92A7A762C003955BF /* ListView.swift in Sources */,
 				30B289A52A7A4EBA003955BF /* Book.swift in Sources */,
@@ -215,6 +234,7 @@
 				30B289A32A7A4CB0003955BF /* ForEachView.swift in Sources */,
 				30B289A72A7A6FF8003955BF /* GridItemView.swift in Sources */,
 				30F3C9AA2A7CD3B800320765 /* OutlineListView.swift in Sources */,
+				421C6EEA2A977B3B00DF4E87 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

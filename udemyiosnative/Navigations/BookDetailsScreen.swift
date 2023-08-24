@@ -8,20 +8,42 @@
 import SwiftUI
 
 struct BookDetailsScreen: View {
+    @Binding var path: NavigationPath
     var book: BookViewModel
     var body: some View {
         VStack{
             Text(book.title).font(.system(size: 20)).bold()
             Text(book.auther)
-            Image(book.cover)
-                .resizable()
-                .padding()
+//            NavigationLink(value: "Picture View",label: {
+//                Image(book.cover)
+//                    .resizable()
+//                    .scaledToFit()
+//            })
+            Button(action: {
+                path.append("Picture View")
+            }, label: {
+                Image(book.cover)
+                                    .resizable()
+                                    .scaledToFit()
+            })
         }
         .navigationTitle("Book")
+        .navigationBarBackButtonHidden(true)
+        .toolbar{
+            ToolbarItem(placement: .topBarLeading){
+                Button("Go back"){
+                    path.removeLast()
+                }
+            }
+        }
+        .navigationDestination(for: String.self, destination: { _ in
+            
+            PictureView(path: $path, book: book)
+        })
     }
 }
 
 #Preview {
-    BookDetailsScreen(book:BookViewModel(book: Book(title: "Steve Jobs", auther: "Walter Isaacson", cover: "book1", year: 2011, selected: false)))
+    BookDetailsScreen(path: .constant(NavigationPath()), book:BookViewModel(book: Book(title: "Steve Jobs", auther: "Walter Isaacson", cover: "book1", year: 2011, selected: false)))
  
 }
