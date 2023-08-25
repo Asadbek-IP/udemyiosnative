@@ -9,19 +9,25 @@ import SwiftUI
 
 
 struct CellBook: View {
+    @EnvironmentObject var bookData: BookAppData
     let book: BookViewModel
     var body: some View {
         HStack{
-            Image(book.cover)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 80,height: 100)
+            if bookData.showPicture{
+                Image(book.cover)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80,height: 100)
+            }
             VStack(alignment: .leading){
                 Text(book.title)
                     .bold()
                 Text(book.auther)
-                Text(book.year)
-                    .font(.caption)
+                
+                if bookData.showYear {
+                    Text(book.year)
+                        .font(.caption)
+                }
             }
             Spacer()
             if(book.selected){

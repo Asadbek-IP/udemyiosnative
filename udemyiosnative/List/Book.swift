@@ -52,6 +52,8 @@ class BookAppData: ObservableObject{
     }
     
     @Published var filteredItems: [BookViewModel] = []
+    @Published var showPicture: Bool = true
+    @Published var showYear: Bool = true
     
     func filterValues(search: String,scope: Scopes = .title){
         if search.isEmpty {

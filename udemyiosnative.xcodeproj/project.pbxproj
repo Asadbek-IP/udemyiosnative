@@ -26,6 +26,13 @@
 		421C6EEA2A977B3B00DF4E87 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C6EE92A977B3B00DF4E87 /* AddBookView.swift */; };
 		426A8A7A2A8A04F500E59C59 /* MultiNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426A8A792A8A04F500E59C59 /* MultiNavigationView.swift */; };
 		426A8A7C2A8A4A6800E59C59 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426A8A7B2A8A4A6800E59C59 /* SearchView.swift */; };
+		429002412A98812D00FB6D07 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429002402A98812D00FB6D07 /* PopoverView.swift */; };
+		429002432A9881D400FB6D07 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429002422A9881D400FB6D07 /* HelpView.swift */; };
+		429002452A9883AB00FB6D07 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429002442A9883AB00FB6D07 /* AlertView.swift */; };
+		429002472A98871000FB6D07 /* ConfirmationDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429002462A98871000FB6D07 /* ConfirmationDialogView.swift */; };
+		4290024A2A988CE100FB6D07 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429002492A988CE100FB6D07 /* MyTabView.swift */; };
+		4290024C2A988D0000FB6D07 /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290024B2A988D0000FB6D07 /* BooksView.swift */; };
+		4290024E2A988D2200FB6D07 /* BookSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290024D2A988D2200FB6D07 /* BookSettingsView.swift */; };
 		42ABE1082A9371D5001B9585 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABE1072A9371D5001B9585 /* NavigationLinkView.swift */; };
 		42ABE10B2A937319001B9585 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABE10A2A937319001B9585 /* SettingsView.swift */; };
 		42ABE10D2A937639001B9585 /* BookDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABE10C2A937639001B9585 /* BookDetailsScreen.swift */; };
@@ -52,6 +59,13 @@
 		421C6EE92A977B3B00DF4E87 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		426A8A792A8A04F500E59C59 /* MultiNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiNavigationView.swift; sourceTree = "<group>"; };
 		426A8A7B2A8A4A6800E59C59 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchView.swift; path = ../../../../../Pictures/SearchView.swift; sourceTree = "<group>"; };
+		429002402A98812D00FB6D07 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		429002422A9881D400FB6D07 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		429002442A9883AB00FB6D07 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		429002462A98871000FB6D07 /* ConfirmationDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogView.swift; sourceTree = "<group>"; };
+		429002492A988CE100FB6D07 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		4290024B2A988D0000FB6D07 /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
+		4290024D2A988D2200FB6D07 /* BookSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSettingsView.swift; sourceTree = "<group>"; };
 		42ABE1072A9371D5001B9585 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
 		42ABE10A2A937319001B9585 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		42ABE10C2A937639001B9585 /* BookDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsScreen.swift; sourceTree = "<group>"; };
@@ -87,6 +101,7 @@
 		3024FB2F2A728E25000A1254 /* udemyiosnative */ = {
 			isa = PBXGroup;
 			children = (
+				429002482A988CCB00FB6D07 /* TabView */,
 				421C6EE62A97774400DF4E87 /* ModalView */,
 				426A8A782A8A04D100E59C59 /* Navigations */,
 				30B289A12A7A4C77003955BF /* List */,
@@ -128,6 +143,10 @@
 			children = (
 				421C6EE72A97776800DF4E87 /* ModalView.swift */,
 				421C6EE92A977B3B00DF4E87 /* AddBookView.swift */,
+				429002402A98812D00FB6D07 /* PopoverView.swift */,
+				429002422A9881D400FB6D07 /* HelpView.swift */,
+				429002442A9883AB00FB6D07 /* AlertView.swift */,
+				429002462A98871000FB6D07 /* ConfirmationDialogView.swift */,
 			);
 			path = ModalView;
 			sourceTree = "<group>";
@@ -143,6 +162,16 @@
 				421C6EE42A975ABE00DF4E87 /* PictureView.swift */,
 			);
 			path = Navigations;
+			sourceTree = "<group>";
+		};
+		429002482A988CCB00FB6D07 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				429002492A988CE100FB6D07 /* MyTabView.swift */,
+				4290024B2A988D0000FB6D07 /* BooksView.swift */,
+				4290024D2A988D2200FB6D07 /* BookSettingsView.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,15 +244,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429002412A98812D00FB6D07 /* PopoverView.swift in Sources */,
 				426A8A7A2A8A04F500E59C59 /* MultiNavigationView.swift in Sources */,
 				30F598702A7BBCB600FD0137 /* SectionsView.swift in Sources */,
 				3024FB332A728E25000A1254 /* ContentView.swift in Sources */,
 				30F3C9A82A7CC17400320765 /* SwipeActionView.swift in Sources */,
+				429002432A9881D400FB6D07 /* HelpView.swift in Sources */,
 				42ABE10D2A937639001B9585 /* BookDetailsScreen.swift in Sources */,
 				3024FB312A728E25000A1254 /* udemyiosnativeApp.swift in Sources */,
 				30F598722A7BCB2800FD0137 /* EditModeView.swift in Sources */,
 				42ABE1082A9371D5001B9585 /* NavigationLinkView.swift in Sources */,
 				30F3C9AC2A7CFF7500320765 /* PickerView.swift in Sources */,
+				429002472A98871000FB6D07 /* ConfirmationDialogView.swift in Sources */,
 				421C6EE52A975ABE00DF4E87 /* PictureView.swift in Sources */,
 				30F3C9AE2A7D0C6300320765 /* DatePickerView.swift in Sources */,
 				421C6EE82A97776800DF4E87 /* ModalView.swift in Sources */,
@@ -231,8 +263,12 @@
 				30B289A92A7A762C003955BF /* ListView.swift in Sources */,
 				30B289A52A7A4EBA003955BF /* Book.swift in Sources */,
 				426A8A7C2A8A4A6800E59C59 /* SearchView.swift in Sources */,
+				4290024A2A988CE100FB6D07 /* MyTabView.swift in Sources */,
+				429002452A9883AB00FB6D07 /* AlertView.swift in Sources */,
+				4290024E2A988D2200FB6D07 /* BookSettingsView.swift in Sources */,
 				30B289A32A7A4CB0003955BF /* ForEachView.swift in Sources */,
 				30B289A72A7A6FF8003955BF /* GridItemView.swift in Sources */,
+				4290024C2A988D0000FB6D07 /* BooksView.swift in Sources */,
 				30F3C9AA2A7CD3B800320765 /* OutlineListView.swift in Sources */,
 				421C6EEA2A977B3B00DF4E87 /* AddBookView.swift in Sources */,
 			);
